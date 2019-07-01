@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" id="BYZ-38-t0r" customClass="RootViewController" customModule="TableViewEditSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROOT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7l-c2-O62">
+                                <rect key="frame" x="154.5" y="318.5" width="66.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m7l-c2-O62" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ad-nB-Lzf"/>
+                            <constraint firstItem="m7l-c2-O62" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m6p-ja-xqo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="130"/>
+        </scene>
+        <!--Traffic Sign-->
+        <scene sceneID="h0Q-mR-dto">
+            <objects>
+                <viewController storyboardIdentifier="TrafficSignViewController" id="hcC-n5-DlO" customClass="TrafficSignViewController" customModule="TableViewEditSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XYR-Is-YLp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic Sign" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1E-34-FFW">
+                                <rect key="frame" x="115" y="315.5" width="145" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-Xx-TQb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="trafficSignCell" id="QDh-SK-rCK">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QDh-SK-rCK" id="mUG-6g-2nV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K1E-34-FFW" firstAttribute="centerY" secondItem="XYR-Is-YLp" secondAttribute="centerY" id="2ze-GA-rDo"/>
+                            <constraint firstItem="d8K-OV-EQg" firstAttribute="bottom" secondItem="YKb-Xx-TQb" secondAttribute="bottom" id="T9n-fv-ygo"/>
+                            <constraint firstItem="d8K-OV-EQg" firstAttribute="trailing" secondItem="YKb-Xx-TQb" secondAttribute="trailing" id="ZE2-lh-bWy"/>
+                            <constraint firstItem="YKb-Xx-TQb" firstAttribute="top" secondItem="d8K-OV-EQg" secondAttribute="top" id="cEX-Kx-NpU"/>
+                            <constraint firstItem="K1E-34-FFW" firstAttribute="centerX" secondItem="XYR-Is-YLp" secondAttribute="centerX" id="gvy-Qv-aV0"/>
+                            <constraint firstItem="YKb-Xx-TQb" firstAttribute="leading" secondItem="d8K-OV-EQg" secondAttribute="leading" id="wxX-PN-CFB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d8K-OV-EQg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Traffic Sign" id="2nF-3D-KT1">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="Cas-L6-yNN">
+                            <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftBarButton" destination="Cas-L6-yNN" id="eLt-zu-AQ8"/>
+                        <outlet property="tableView" destination="YKb-Xx-TQb" id="IIt-0X-Wv7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eV-22-Dji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="130"/>
+        </scene>
+        <!--Alert Sign-->
+        <scene sceneID="Q3L-to-Zhy">
+            <objects>
+                <viewController storyboardIdentifier="AlertSignViewController" id="9sd-rO-EI1" customClass="AlertSignViewController" customModule="TableViewEditSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IlL-zH-J4a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Sign" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQa-80-gWn">
+                                <rect key="frame" x="125" y="315.5" width="125" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHq-ts-0Mh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="alertSignCell" id="TyV-Rf-OVk">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TyV-Rf-OVk" id="xTK-Ic-3ez">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kHq-ts-0Mh" firstAttribute="leading" secondItem="fKQ-mi-RW0" secondAttribute="leading" id="1fe-KP-CLt"/>
+                            <constraint firstItem="fKQ-mi-RW0" firstAttribute="bottom" secondItem="kHq-ts-0Mh" secondAttribute="bottom" id="6d7-dd-vRk"/>
+                            <constraint firstItem="kHq-ts-0Mh" firstAttribute="top" secondItem="fKQ-mi-RW0" secondAttribute="top" id="Fyz-83-yS3"/>
+                            <constraint firstItem="fKQ-mi-RW0" firstAttribute="trailing" secondItem="kHq-ts-0Mh" secondAttribute="trailing" id="b0W-6t-YYx"/>
+                            <constraint firstItem="KQa-80-gWn" firstAttribute="centerY" secondItem="IlL-zH-J4a" secondAttribute="centerY" id="dnb-gL-SRb"/>
+                            <constraint firstItem="KQa-80-gWn" firstAttribute="centerX" secondItem="IlL-zH-J4a" secondAttribute="centerX" id="xwx-0J-45z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fKQ-mi-RW0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alert Sign" id="BmH-bE-kAu">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="MOR-PO-gsa">
+                            <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftBarButton" destination="MOR-PO-gsa" id="aht-hK-1Uz"/>
+                        <outlet property="tableView" destination="kHq-ts-0Mh" id="fn6-Fw-sEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epH-3F-4If" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="839"/>
+        </scene>
+        <!--Road Sign View Controller-->
+        <scene sceneID="cjc-Hi-M6c">
+            <objects>
+                <viewController storyboardIdentifier="RoadSignViewController" id="bED-hA-sBj" customClass="RoadSignViewController" customModule="TableViewEditSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Asf-lX-YYh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylQ-Cg-gil">
+                                <rect key="frame" x="80" y="258.5" width="215" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BMM-kA-1Vy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Traffic Sign">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZK-cc-AH1">
+                                <rect key="frame" x="80" y="358.5" width="215" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dgy-eN-yu9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Alert Sign">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HZK-cc-AH1" firstAttribute="centerX" secondItem="Asf-lX-YYh" secondAttribute="centerX" id="KBd-XT-XRB"/>
+                            <constraint firstItem="HZK-cc-AH1" firstAttribute="centerY" secondItem="Asf-lX-YYh" secondAttribute="centerY" constant="50" id="NjN-l6-vIX"/>
+                            <constraint firstItem="ylQ-Cg-gil" firstAttribute="centerX" secondItem="Asf-lX-YYh" secondAttribute="centerX" id="cPc-kj-ism"/>
+                            <constraint firstItem="HZK-cc-AH1" firstAttribute="leading" secondItem="fBO-3B-ZnM" secondAttribute="leading" constant="80" id="ee5-65-Fl5"/>
+                            <constraint firstItem="ylQ-Cg-gil" firstAttribute="centerY" secondItem="Asf-lX-YYh" secondAttribute="centerY" constant="-50" id="fWK-0w-sdY"/>
+                            <constraint firstItem="fBO-3B-ZnM" firstAttribute="trailing" secondItem="ylQ-Cg-gil" secondAttribute="trailing" constant="80" id="sSy-WP-unB"/>
+                            <constraint firstItem="fBO-3B-ZnM" firstAttribute="trailing" secondItem="HZK-cc-AH1" secondAttribute="trailing" constant="80" id="sTW-Hs-Zfk"/>
+                            <constraint firstItem="ylQ-Cg-gil" firstAttribute="leading" secondItem="fBO-3B-ZnM" secondAttribute="leading" constant="80" id="zie-XI-bm6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fBO-3B-ZnM"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertSignButton" destination="HZK-cc-AH1" id="cvh-T5-Q9I"/>
+                        <outlet property="trafficSignBuggon" destination="ylQ-Cg-gil" id="XPO-o6-E0z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLC-kP-jL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="839"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MrT-uk-IJx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUA-mX-fJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="TrafficSignNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qSF-Nr-M3B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wqt-JL-31P">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hcC-n5-DlO" kind="relationship" relationship="rootViewController" id="1kl-Wf-VLa"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="871" y="130"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Uc-kc-BHr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhb-TK-asx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="AlertSignNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="9NT-dA-bgB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w3X-do-MTH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9sd-rO-EI1" kind="relationship" relationship="rootViewController" id="H2x-vS-jYN"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="870" y="839"/>
+        </scene>
+    </scenes>
+</document>
