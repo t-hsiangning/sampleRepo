@@ -23,7 +23,8 @@ struct TrafficSignUseCaseImpl: TrafficSignUseCase {
     func loadTraffictSign() -> TrafficSignViewModelImpl {
         let viewModel = TrafficSignViewModelImpl()
         let signs = self.signRepository.getTrafficSign()
-        viewModel.signsVar.accept(signs)
+//        viewModel.signsVar.accept(signs)
+        viewModel.signs.accept(signs)
         return viewModel
     }
 }

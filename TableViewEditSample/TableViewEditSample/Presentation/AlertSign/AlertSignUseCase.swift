@@ -9,7 +9,7 @@
 import Foundation
 
 protocol AlertSignUseCase {
-    func loadAlertSign() -> AlertSignViewModel
+    func loadAlertSign() -> AlertSignViewModelImpl
 }
 
 struct AlertSignUseCaseImpl: AlertSignUseCase {
@@ -20,7 +20,7 @@ struct AlertSignUseCaseImpl: AlertSignUseCase {
         self.signRepository = signRepository
     }
     
-    func loadAlertSign() -> AlertSignViewModel {
+    func loadAlertSign() -> AlertSignViewModelImpl {
         let viewModel = AlertSignViewModelImpl()
         let signs = self.signRepository.getAlertSign()
         viewModel.signsVar.accept(signs)

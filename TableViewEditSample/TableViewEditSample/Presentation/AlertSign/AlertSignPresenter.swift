@@ -11,13 +11,14 @@ import Foundation
 protocol AlertSignPresenter {
     func setUpView()
     func tapClose()
+    func tapAlertSign(title: String, image: String)
 }
 
 class AlertSignPresenterImpl: AlertSignPresenter {
     weak var viewControllerInput: AlertSignViewControllerInput?
     var wireframe: AlertSignWireframe
     var useCase: AlertSignUseCase
-    var viewModel: AlertSignViewModel
+    var viewModel: AlertSignViewModelImpl
     
     public required init(wireframe: AlertSignWireframe, useCase: AlertSignUseCase, viewController: AlertSignViewControllerInput) {
         self.viewControllerInput = viewController
@@ -33,5 +34,9 @@ class AlertSignPresenterImpl: AlertSignPresenter {
     
     func tapClose() {
         self.wireframe.closeViewController(completion: {})
+    }
+    
+    func tapAlertSign(title: String, image: String) {
+        self.wireframe.openAlertDetailViewController(title: title, image: image)
     }
 }

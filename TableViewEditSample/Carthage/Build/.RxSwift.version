@@ -6,8 +6,8 @@
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
-      "name" : "RxCocoa",
-      "hash" : "10e5ab0f540d5d1ff5f1397ad7b206f131f9ea3b4d3edee86c57421bed5f8a1f",
+      "name" : "RxTest",
+      "hash" : "3f6e32d8c0dadf83ef6abd0d5f74312f57d3a5f527776416d6b86c42f6a71255",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
@@ -16,8 +16,8 @@
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
-      "name" : "RxTest",
-      "hash" : "3f6e32d8c0dadf83ef6abd0d5f74312f57d3a5f527776416d6b86c42f6a71255",
+      "name" : "RxCocoa",
+      "hash" : "10e5ab0f540d5d1ff5f1397ad7b206f131f9ea3b4d3edee86c57421bed5f8a1f",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
@@ -33,13 +33,13 @@
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
-      "name" : "RxBlocking",
-      "hash" : "639a6c8beaac7379f0e9c2226ca7cadb3d2b67b5c57e54646572eb44fee2b35d",
+      "name" : "RxCocoa",
+      "hash" : "e014189aebad052800f4ed00f266d663117cc7f6b566bfd73bf0e6aa3246a316",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
-      "name" : "RxCocoa",
-      "hash" : "e014189aebad052800f4ed00f266d663117cc7f6b566bfd73bf0e6aa3246a316",
+      "name" : "RxBlocking",
+      "hash" : "639a6c8beaac7379f0e9c2226ca7cadb3d2b67b5c57e54646572eb44fee2b35d",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
@@ -78,8 +78,8 @@
   "commitish" : "5.0.1",
   "iOS" : [
     {
-      "name" : "RxBlocking",
-      "hash" : "c5d77e17215efd7bd797ae0dec9ac4b37a9eb63704649e381e5b9bd81a2af251",
+      "name" : "RxTest",
+      "hash" : "a9e67b4ab705cc2be28ce5ff41929c6f7f0ecd5bd2f9f34da3bd1385300a264f",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
@@ -88,8 +88,8 @@
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {
-      "name" : "RxTest",
-      "hash" : "a9e67b4ab705cc2be28ce5ff41929c6f7f0ecd5bd2f9f34da3bd1385300a264f",
+      "name" : "RxBlocking",
+      "hash" : "c5d77e17215efd7bd797ae0dec9ac4b37a9eb63704649e381e5b9bd81a2af251",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     },
     {

@@ -15,6 +15,7 @@ enum VCIDConstants {
     case trafficSign
     case alertSignNavigation
     case trafficSignNavigation
+    case alertShow
     
     public var identity: String {
         switch self {
@@ -24,6 +25,7 @@ enum VCIDConstants {
         case .trafficSign: return "TrafficSignViewController"
         case .alertSignNavigation: return "AlertSignNavigationController"
         case .trafficSignNavigation: return "TrafficSignNavigationController"
+        case .alertShow: return "AertShowViewController"
         }
     }
 }

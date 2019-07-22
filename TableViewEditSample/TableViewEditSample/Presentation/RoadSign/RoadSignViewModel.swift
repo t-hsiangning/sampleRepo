@@ -15,7 +15,7 @@ protocol RoadSignViewModel {
 }
 
 class RoadSignViewModelImpl: RoadSignViewModel {
-    // エラー表示
+    // show error
     var isErrorVar: BehaviorRelay<Bool> = BehaviorRelay<Bool>(value: false)
 //    var errorInfoVar = BehaviorRelay<ErrorModel?>(value: nil)
     var isError: Observable<Bool> {

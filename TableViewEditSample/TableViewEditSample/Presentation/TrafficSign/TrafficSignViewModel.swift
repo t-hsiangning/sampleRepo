@@ -11,18 +11,19 @@ import RxSwift
 import RxCocoa
 
 protocol TrafficSignViewModel {
-    var signs: Observable<[TrafficSignModel]> { get }
+    var signs: BehaviorRelay<[TrafficSignModel]> { get }
     var isError: Observable<Bool> { get }
 }
 
 class TrafficSignViewModelImpl: TrafficSignViewModel {
-    var signsVar: BehaviorRelay<[TrafficSignModel]> = BehaviorRelay<[TrafficSignModel]>(value: [])
+//    var signsVar: BehaviorRelay<[TrafficSignModel]> = BehaviorRelay<[TrafficSignModel]>(value: [])
+    var signs: BehaviorRelay<[TrafficSignModel]> = BehaviorRelay<[TrafficSignModel]>(value: [])
     var isErrorVar: BehaviorRelay<Bool> = BehaviorRelay<Bool>(value: false)
-    var signs: Observable<[TrafficSignModel]> {
-        get {
-            return signsVar.asObservable()
-        }
-    }
+//    var signs: Observable<[TrafficSignModel]> {
+//        get {
+//            return signsVar.asObservable()
+//        }
+//    }
     var isError: Observable<Bool> {
         get {
             return isErrorVar.asObservable()
